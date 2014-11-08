@@ -27,7 +27,13 @@ $(function () {
 
     var select = initializeGame();
 
+    $(window).load(function () {
+        SoundManager.addEventToPlayBackgroundSoundInLoop();
+        SoundManager.playBackgroundSound();
+    });
+
     $("#OK").click(function () {
+        SoundManager.playClick();
         $("#instructionDiv").hide();
 
         var path = "image\\cards\\" + select + ".png";
@@ -40,7 +46,9 @@ $(function () {
     });
 
     $("#restart").click(function () {
+        SoundManager.playDeleteSound();
         $('#cardDiv').hide(500, function () {
+            SoundManager.playWhistle();
             select = initializeGame();
             $('#cardDiv').show(500);
         });
