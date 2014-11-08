@@ -41,6 +41,7 @@ $(function () {
 
         $("#resultDiv").show();
         $("#resultText").show(1000, function () {
+            SoundManager.playTadaSound();
             $("#resultCard").show(500);
         });
     });
@@ -48,7 +49,7 @@ $(function () {
     $("#restart").click(function () {
         SoundManager.playDeleteSound();
         $('#cardDiv').hide(500, function () {
-            SoundManager.playWhistle();
+            SoundManager.playDeleteSound();
             select = initializeGame();
             $('#cardDiv').show(500);
         });
