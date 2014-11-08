@@ -1,0 +1,36 @@
+body {
+    background-color: black;
+    background-attachment: fixed;
+    background-position: 50% 50%;
+    color: red;
+}
+
+p {
+    font-size: 20px;
+    font-family: Lucida Console;
+    font-weight: bold;
+}
+
+input {
+    font-size: 40px;
+    font-family: Lucida Console;
+    background-color: black;
+    color: red;
+    font-weight: bold;
+    width: 200px;
+}
+
+img {
+    height: 70px;
+    width: 50px;
+}
+
+
+#headerDiv {
+    overflow: hidden;
+}
+
+#close {
+    margin: 10px 40px 20px;
+    float: right;
+}
