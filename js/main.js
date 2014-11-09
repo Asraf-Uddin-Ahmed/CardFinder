@@ -49,7 +49,7 @@ $(function () {
     $("#restart").click(function () {
         SoundManager.playDeleteSound();
         $('#cardDiv').hide(500, function () {
-            SoundManager.playDeleteSound();
+            SoundManager.playWhistle();
             select = initializeGame();
             $('#cardDiv').show(500);
         });
